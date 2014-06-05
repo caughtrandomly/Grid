@@ -1,0 +1,133 @@
+/*
+ * Grid
+ * Created By Cory Mosey
+ * 2014
+ */
+
+
+/*
+ * Set Variables
+ */
+
+$container: 960px;
+
+$mobile: 700px;
+$tablet: 800px;
+
+$column-padding-top: 20px;
+$column-padding-sides: 20px;
+
+/*
+ * Setting Column Widths
+ */
+
+$col-1: 8.33333333333333333333333333%;
+$col-2: 16.6666666666666666666666699%;
+$col-3: 25%;
+$col-4: 33.333533333%;
+$col-5: 41.6666666666666666666666667%;
+$col-6: 50%;
+$col-7: 58.3333333333333333333333348%;
+$col-8: 66.6666666667%;
+$col-9: 75%;
+$col-10: 83.3333333333%;
+$col-11: 91.66666666673%;
+$col-12: 100%;
+
+
+/*
+ * Clearing
+ */
+
+.clearfix {
+	&:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+
+/*
+ * Container
+ */
+
+.container {
+	position: relative;
+	max-width: $container;
+	margin: 0 auto;
+	padding: 0;
+
+	@extend .clearfix;
+}
+
+
+/*
+ * Row
+ */
+
+.row {
+	@extend .clearfix;
+}
+
+
+/*
+ * Columns
+ */
+
+.column {
+	float: left;
+	display: inline;
+	box-sizing: border-box;
+	margin: 0;
+	padding: $column-padding-top $column-padding-sides;
+
+	overflow: hidden;
+
+	&.column__1 { width: $col-1; }
+	&.column__2 { width: $col-2; }
+	&.column__3 { width: $col-3; }
+	&.column__4 { width: $col-4; }
+	&.column__5 { width: $col-5; }
+	&.column__6 { width: $col-6; }
+	&.column__7 { width: $col-7; }
+	&.column__8 { width: $col-8; }
+	&.column__9 { width: $col-9; }
+	&.column__10 { width: $col-10; }
+	&.column__11 { width: $col-11; }
+	&.column__12 { width: $col-12; }
+
+	&.column--full {
+		padding: $column-padding-top 0;
+	}
+
+	&.offset--1 { margin: 0 0 0 $col-1; }
+	&.offset--2 { margin: 0 0 0 $col-2 }
+	&.offset--3 { margin: 0 0 0 $col-3; }
+	&.offset--4 { margin: 0 0 0 $col-4; }
+	&.offset--5 { margin: 0 0 0 $col-5; }
+	&.offset--6 { margin: 0 0 0 $col-6; }
+	&.offset--7 { margin: 0 0 0 $col-7; }
+	&.offset--8 { margin: 0 0 0 $col-8; }
+	&.offset--9 { margin: 0 0 0 $col-9; }
+	&.offset--10 { margin: 0 0 0 $col-10; }
+	&.offset--11 { margin: 0 0 0 $col-11; }
+
+	@media screen and (max-width: $mobile) {
+		min-width: 100%;
+		margin: 0!important;
+	}
+}
+
+.hide--mobile {
+	@media screen and (max-width: $mobile) {
+		display: none;
+	}
+}
+.hide--tablet {
+	@media screen and (max-width: $tablet) {
+		display: none;
+	}
+}

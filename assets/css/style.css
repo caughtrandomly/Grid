@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/*
+ * Compiling everything
+ * Don't mess with to much!
+ */
+/*
+ * CSS Reset
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ * Demo Purpose CSS
+ */
+body {
+  font-family: 'Open Sans', Sans-Serif, Arial;
+  font-size: 14px;
+  font-weight: 300; }
+
+.background {
+  background: #EFEFEF;
+  padding: 20px;
+  text-align: center; }
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0 0 0; }
+
+h2 {
+  text-align: center; }
+
+/*
+ * Grid
+ * Created By Cory Mosey
+ * 2014
+ */
+/*
+ * Set Variables
+ */
+/*
+ * Setting Column Widths
+ */
+/*
+ * Clearing
+ */
+.clearfix:after, .container:after, .row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/*
+ * Container
+ */
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0; }
+
+/*
+ * Row
+ */
+/*
+ * Columns
+ */
+.column {
+  float: left;
+  display: inline;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 20px;
+  overflow: hidden; }
+  .column.column__1 {
+    width: 8.33333%; }
+  .column.column__2 {
+    width: 16.66667%; }
+  .column.column__3 {
+    width: 25%; }
+  .column.column__4 {
+    width: 33.33353%; }
+  .column.column__5 {
+    width: 41.66667%; }
+  .column.column__6 {
+    width: 50%; }
+  .column.column__7 {
+    width: 58.33333%; }
+  .column.column__8 {
+    width: 66.66667%; }
+  .column.column__9 {
+    width: 75%; }
+  .column.column__10 {
+    width: 83.33333%; }
+  .column.column__11 {
+    width: 91.66667%; }
+  .column.column__12 {
+    width: 100%; }
+  .column.column--full {
+    padding: 20px 0; }
+  .column.offset--1 {
+    margin: 0 0 0 8.33333%; }
+  .column.offset--2 {
+    margin: 0 0 0 16.66667%; }
+  .column.offset--3 {
+    margin: 0 0 0 25%; }
+  .column.offset--4 {
+    margin: 0 0 0 33.33353%; }
+  .column.offset--5 {
+    margin: 0 0 0 41.66667%; }
+  .column.offset--6 {
+    margin: 0 0 0 50%; }
+  .column.offset--7 {
+    margin: 0 0 0 58.33333%; }
+  .column.offset--8 {
+    margin: 0 0 0 66.66667%; }
+  .column.offset--9 {
+    margin: 0 0 0 75%; }
+  .column.offset--10 {
+    margin: 0 0 0 83.33333%; }
+  .column.offset--11 {
+    margin: 0 0 0 91.66667%; }
+  @media screen and (max-width: 700px) {
+    .column {
+      min-width: 100%;
+      margin: 0 !important; } }
+
+@media screen and (max-width: 700px) {
+  .hide--mobile {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .hide--tablet {
+    display: none; } }
